@@ -1,0 +1,161 @@
+html {
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    line-height: 1.45;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #7DAFD1;
+    color: #444;
+    overflow-y: scroll;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    }
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    padding-top: 1.333rem; /* 24px */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #256DA4;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2.666rem /* 48px */;
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.333rem; /* 24px */
+}
+
+.content {
+    padding: 0 .9rem; /* 10px */
+}
+
+@media (min-width: 700px) {
+    .content {
+        padding: 0;
+    }
+}
+
+[role="banner"] {
+    text-align: center;
+}
+
+.thick {
+    font-weight: 600;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+.intro {
+    margin: 0 auto 4rem auto;
+    max-width: 460px;
+}
+
+    .intro .media {
+        text-align: center;
+    }
+
+    .intro__text {
+        text-align: center;
+    }
+
+    .intro__media {
+        display: inline-block;
+    }
+
+.bookmarklet {
+    background-color: #fff;
+    padding: 2.666rem 0;
+    text-align: center;
+}
+
+    .bookmarklet__text {
+        text-align: center;
+        margin: 0 auto 1.333rem auto;
+    }
+
+    .bookmarklet__feature {
+        border: 1px solid #999;
+        background-color: #F2F1F1;
+        border-radius: 4px;
+        padding: 2.666rem 1.333rem;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+.source {
+    background-color: #F2F1F1;
+    padding: 2.666rem 0;
+    text-align: center;
+}
+
+.message {
+    margin-bottom: 1.333rem; /* 24px */
+    font-size: .88rem;
+    font-weight: 600;
+    color: #777;
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 4rem;
+    border: 1px solid #123A58;
+    border-radius: 4px;
+    color: #256DA4;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    box-shadow: 0px 2px 0px 0px #123A58;
+    transition: all 250ms ease;
+}
+
+    .btn:hover {
+        background-color: hsl(0,0%,85%);
+    }
+
+    .btn--bookmarklet {
+        background-color: #256DA4;
+        color: #fff;
+    }
+
+    .btn--bookmarklet:hover {
+        background-color: hsl(206, 63.2%, 32.4%);
+        cursor: move;
+    }

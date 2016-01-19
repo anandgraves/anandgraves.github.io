@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarklet for deleting a Trello card</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Montserrat:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header role="banner">
+        <div class="content">
+            <h1><img class="logo" alt="Taco" src="assets/images/taco.png"> Trello <wbr>delete card<wbr> bookmarklet</h1>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="intro">
+            <div class="content">
+                <div class="text"><p class="intro__text">Deleting a Trello card involves a <span class="thick">3 click process</span>, which can be quite annoying if you're deleting multiple cards.</p></div>
+                <div class="media"><img src="assets/images/trello-delete-card.gif" class="intro__media" alt="Deleting a Trello card [gif animation]"></div>
+            </div>
+        </section>
+
+        <section class="bookmarklet">
+            <div class="content">
+                <p class="bookmarklet__text">The <em>Trello delete card bookmarklet</em> deletes a card with <span class="thick">1 click</strong>.</p>
+
+                <div class="bookmarklet__feature">
+                    <div class="message">Drag this button to your bookmarks toolbar</div>
+                    <a class="btn--bookmarklet btn" role="button" rel="js-bookmarklet" href="javascript: (function() {if (window.TrelloDeleteCard !== undefined) {TrelloDeleteCard.init();} else {var script = document.createElement('script');script.src = 'https://cdn.rawgit.com/anandgraves/trello-delete-card/master/trello-delete-card.js?' + Math.random().toString(36).substring(8);script.onload = function() {TrelloDeleteCard.init();};document.head.appendChild(script);}})();">Delete Trello card</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="source">
+            <div class="content">
+                <a class="btn" role="button" href="https://github.com/anandgraves/trello-delete-card">View on Github</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('[rel="js-bookmarklet"]').addEventListener('click', function() {
+            alert('Drag this link to your browsers Bookmarks Toolbar and have fun deleting Trello cards :)')
+        });
+    </script>
+</body>
+</html>
