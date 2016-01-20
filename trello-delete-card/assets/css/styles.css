@@ -94,6 +94,7 @@ p {
 
     .intro__media {
         display: inline-block;
+        box-shadow: 0 8px 40px 0 rgba(0,0,0,.5);
     }
 
 .bookmarklet {
@@ -110,6 +111,7 @@ p {
     .bookmarklet__feature {
         border: 1px solid #999;
         background-color: #F2F1F1;
+        box-shadow: 0 8px 40px 0 rgba(0,0,0,.5);
         border-radius: 4px;
         padding: 2.666rem 1.333rem;
         max-width: 460px;
